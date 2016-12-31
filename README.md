@@ -23,7 +23,7 @@ Huffman Encoding is a lossless compression technique that assigns a unique binar
   <i>'compressedMessage' , 'key_1' , 'key_2' , 'compressionEfficieny'</i>
 
 ##Decode Message:
-Send a GET request to 127.0.0.1:8000/decode/ with the following parameters:
+Send a <b>GET</b> request to <b>127.0.0.1:8000/decode/</b> with the following parameters:
 
 <i>'compressedMessage' , 'key_1' , 'key_2'</i>
 
