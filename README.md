@@ -9,7 +9,11 @@ Huffman Encoding is a lossless compression technique that assigns a unique binar
 <li>While number of elements in the heap is greater than one, we extract two nodes with lowest frequency, create a new internal node with frequency set to the sum of the extracted nodes frequency, make the extracted nodes the left and right child of this new node and insert it back.</li>
 
 <li>The last remaining node is the root of the huffman tree and each leaf represents a unique character in the original message. The path from root to leaf denotes the encoding for that character (left branches representing 0 , right branches representing 1).</li>
+</ul>
 
+Once the codes have been assigned, compression and extraction is done as follows:
+
+<ul>
 <li>Using the above encoding the original message is converted to a bit string and this is then mapped to a string of characters in groups of 6 bits. The string resulting from this mapping is the compressed message.</li>
 
 <li> Now the huffman tree is necessary to decode the message and so the preorder traversal of the tree is also returned as key_1 to the user. key_1 is later used to re-construct the huffman tree when the user wishes to extract the original message. We also return key_2 to the user which indicates the representation of internal nodes in the huffman tree as well as some padding bits that are added to the encoding.</li>
