@@ -25,7 +25,7 @@ Once the codes have been assigned, compression and extraction is done as follows
 The algorithm performs best when messages consist of only a limited number of distinct characters or when there is a lot of repetition of certain characters than others. Ex. DNA protein sequences, list of phone numbers.
 </i></b>
 
-##Encode Message:
+## Encode Message:
   Send a <b>GET</b> request to <b>127.0.0.1:8000/encode/</b> with the following parameters:
   
   <i>'message':</i> Message to be compressed
@@ -34,7 +34,7 @@ The algorithm performs best when messages consist of only a limited number of di
   
   <i>'compressedMessage' , 'key_1' , 'key_2' , 'compressionEfficieny'</i>
 
-##Decode Message:
+## Decode Message:
 Send a <b>GET</b> request to <b>127.0.0.1:8000/decode/</b> with the following parameters:
 
 <i>'compressedMessage' , 'key_1' , 'key_2'</i>
